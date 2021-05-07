@@ -24,7 +24,7 @@ namespace QuanLyKhachHang.DAO
         public List<KhachHang> loadKhachHangList()
         {
             List<KhachHang> tableList = new List<KhachHang>();
-            DataTable data = DataProvider.Instance.executeQuery("exec DS_KH");
+            DataTable data = DataProvider.Instance.executeQuery("select * from KHACHHANG");
             foreach (DataRow item in data.Rows)
             {
                 KhachHang table = new KhachHang(item);

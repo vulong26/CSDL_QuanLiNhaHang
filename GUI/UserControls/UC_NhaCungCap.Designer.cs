@@ -276,7 +276,7 @@
             this.txtSPhanTram.TextPlaceholder = "";
             this.txtSPhanTram.UseSystemPasswordChar = false;
             this.txtSPhanTram.WordWrap = true;
-            this.txtSPhanTram.TextChanged += new System.EventHandler(this.txtSPhanTram_TextChanged);
+            
             // 
             // txtSMaKM
             // 
@@ -461,7 +461,7 @@
             this.btnHuyKM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnHuyKM.TextMarginLeft = 0;
             this.btnHuyKM.UseDefaultRadiusAndThickness = true;
-            this.btnHuyKM.Click += new System.EventHandler(this.btnHuyKM_Click_1);
+            
             // 
             // btnLuuKM
             // 

@@ -20,13 +20,13 @@ namespace QuanLyKhachHang.GUI.UserControls.ThongKe
 
         private void btnMon_Click(object sender, EventArgs e)
         {
-            pageThongKe.SelectTab(2);
+            pageThongKe.SelectTab(1);
         }
 
 
         private void btnTaiKhoan(object sender, EventArgs e)
         {
-            pageThongKe.SelectTab(1);
+            pageThongKe.SelectTab(2);
         }
 
         private void dateNgayLapTK_ValueChanged(object sender, EventArgs e)

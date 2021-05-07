@@ -24,7 +24,7 @@ namespace QuanLyKhachHang
 
         void disEnable(bool e)
         {
-
+            
             txbSuaTenKH.ReadOnly = e;
             txbSuaSDT.ReadOnly = e;
             btnThemKH.Enabled = e;
@@ -52,7 +52,7 @@ namespace QuanLyKhachHang
         }
         void xoa(string makh)
         {
-            DataProvider.Instance.executeNonQuery("exec XoaKH @MAKH ", new object[] { makh });
+            DataProvider.Instance.executeNonQuery("exec XoaKH @MAKH ", new object[] { makh} );
         }
         void themSua(string makh, string tenkh, string sdt)
         {
@@ -77,8 +77,9 @@ namespace QuanLyKhachHang
         private void btnThemKH_Click_1(object sender, EventArgs e)
         {
             disEnable(false);
-            txbSuaMaKH.Text = DataProvider.Instance.executeScalar("select [dbo].TAOMAKH()").ToString();
+            txbSuaMaKH.Text = DataProvider.Instance.executeScalar("select * from KHACHHANG").ToString();
             txbSuaTenKH.Text = "";
+            txbSuaMaKH.Text = "";
         }
         private void btnSuaKH_Click_1(object sender, EventArgs e)
         {

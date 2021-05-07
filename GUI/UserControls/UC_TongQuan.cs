@@ -15,7 +15,7 @@ namespace QuanLyKhachHang.UserControls
         public UC_TongQuan()
         {
             InitializeComponent();
-            bunifuDropdown1.SelectedIndex = 0;
+            
         }
         private void loadChart()
         {
@@ -56,7 +56,7 @@ namespace QuanLyKhachHang.UserControls
 
         private void btnMon_Click(object sender, EventArgs e)
         {
-            pageThongKe.SelectTab(1);
+            pageThongKe.SelectTab(0);
             
             
         }
@@ -78,7 +78,7 @@ namespace QuanLyKhachHang.UserControls
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            pageThongKe.SelectTab(5);
+            pageThongKe.SelectTab(2);
         }
     }
 }

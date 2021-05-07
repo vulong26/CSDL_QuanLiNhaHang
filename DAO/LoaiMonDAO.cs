@@ -49,7 +49,7 @@ namespace QuanLyKhachHang.DAO
         }
         public bool DeleteFoodCategory(string maloai, string tenloai)
         {
-            string query = string.Format("Delete from LOAIMON where MALOAI = '{0}'", maloai);
+            string query = string.Format("Delete  LOAIMON where MALOAI = '{0}'", maloai);
             int result = DataProvider.Instance.executeNonQuery(query);
             return result > 0;
         }
